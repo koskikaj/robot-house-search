@@ -11,5 +11,5 @@ ${subSelectionOfRooms}    ddcl-input-rooms-i0
 ${minFlatSize}    minSize
 ${maxFlatSize}    maxSize
 ${searchFlatsButton}    xpath=//a[contains(@class, 'submit')]//span[contains(text(), 'Hae')]
-${CheapestFlats}    xpath=//a[contains(@class, 'option selected')]//a[contains(text(), 'Halvimmat ensin, €')]
-${NewOrderCheapestFlats}    xpath=//a[contains(@class, 'size')]//div[contains(text(), 'Koko')]
+${CheapestFlats}    xpath=/html[1]/body[1]/section[1]/section[1]/section[1]/section[3]/div[1]/ul[1]/li[3]/a[1]
+${NewOrderCheapestFlats}    xpath=/html[1]/body[1]/section[1]/section[1]/section[1]/section[4]/ol[1]/li[1]/a[2]/div[1]/div[3]
