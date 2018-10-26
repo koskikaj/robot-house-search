@@ -4,7 +4,7 @@ Library    XvfbRobot
 
 *** Variables ***
 ${homepage}    https://www.${server}/
-${browser}    gc
+${browser}    ff
 ${server}    etuovi.com
 ${city}    Tampere
 ${minimumPrice}    100

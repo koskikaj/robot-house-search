@@ -1,4 +1,4 @@
-FROM        selenium/standalone-chrome
+FROM        selenium/standalone-firefox
 
 USER        root
 # Add user for running tests
