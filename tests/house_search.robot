@@ -10,8 +10,8 @@ Documentation    House search
 ...              - Sort Search Results From Cheapest To Most Expensive
 ...              - Collect Attributes From Cheapest Apartment
 
-Resource          ../resources/resources.robot
-Resource          ../resources/selectors.robot
+Resource          resources.robot
+Resource          selectors.robot
 Suite Setup       Setup
 Test Teardown     Run Keyword If Test Failed    Capture Page Screenshot    screen ${TEST_NAME}.png
 Suite Teardown    Close All Browsers
