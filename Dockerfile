@@ -2,9 +2,13 @@ FROM        selenium/standalone-firefox
 
 USER        root
 # Add user for running tests
-RUN         apt-get update
-RUN         apt-get install curl -y
-RUN         apt-get install python2.7 python-pip nano -y
+RUN         apt-get update -y \
+            && apt-get install -y \
+            curl \
+            python2.7 \
+            python-pip \
+            nano \
+            xvfb
 
 RUN mkdir -p /usr/src/app
 RUN mkdir -p /output
