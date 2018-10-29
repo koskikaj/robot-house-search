@@ -1,6 +1,6 @@
 #!/bin/bash -ue
 
-#localhost:4444 -> "ready": true -> doesn't work output_match=\"ready\":\true
+#localhost:4444 -> "ready": true
 url="${1}/wd/hub/status"
 output_match='"ready":\ true'
 
