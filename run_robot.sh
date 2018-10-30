@@ -51,3 +51,5 @@ echo "robot ${ROBOT_OPTIONS} --outputdir ${OUTPUT_DIR} ${ROBOT_TESTS}"
 echo
 
 robot ${ROBOT_OPTIONS} --outputdir ${OUTPUT_DIR} ${ROBOT_TESTS}
+
+rc=$?; if [[ $rc != 0 ]]; then exit $rc; fi
