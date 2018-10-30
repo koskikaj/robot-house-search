@@ -17,6 +17,8 @@ Login To Test Page
     [Documentation]    Opens and verifies any web page
     Open Browser    ${homepage}    ${browser}
     Location Should Be    ${homepage}
+    ${present}    Run Keyword And Return Status    Element Should Be Visible   ${OnlyCookiesAccepted}
+    Run Keyword If    ${present}    Click Button    ${OnlyCookiesAccepted}
 
 Fill Default Text To Search Bar
     [Arguments]    ${city}
