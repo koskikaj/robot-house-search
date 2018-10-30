@@ -1,4 +1,4 @@
-echo 'cypress pipeline'
+echo 'robot pipeline'
 
 node {
 
@@ -8,7 +8,7 @@ node {
    stage('Set Jenkins as SUDO') {
     sh "sudo su -s /bin/bash jenkins"
    }
-   stage('Build docker image for Cypress') {
+   stage('Build docker image for Robot') {
     sh "sudo docker build -t robotdocker:latest ."
    }
    stage('Execute tests with mount') {
