@@ -2,9 +2,11 @@ echo 'robot pipeline'
 
 node {
 
-   currentBuild.result = "SUCCESS"
+//   currentBuild.result = "SUCCESS"
 
-try {
+//try {
+
+catchError {
 
    stage('Clone Project From GITHUB') {
    checkout scm
@@ -19,11 +21,15 @@ try {
     sh "sudo docker run -p 4444:4444 --rm -v \$(pwd)/tests:/tmp/tests -v \$(pwd)/output:/output robotdocker:latest"\
    }
 
-}
+   currentBuild.result = "SUCCESS"
 
-catch (err) {
-        currentBuild.result = "FAILURE"
-        throw err
-        }
+//}
+
+/*catch (err) {
+   currentBuild.result = "FAILURE"
+   throw err
+   }*/
+
+   currentBuild.result = "FAILURE"
 
 }
