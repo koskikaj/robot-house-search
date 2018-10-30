@@ -52,4 +52,4 @@ echo
 
 robot ${ROBOT_OPTIONS} --outputdir ${OUTPUT_DIR} ${ROBOT_TESTS}
 
-rc=$?; if [ $rc != 0 ]; then exit $rc; fi
+#rc=$?; if [ $rc != 0 ]; then exit $rc; fi

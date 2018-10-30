@@ -2,6 +2,10 @@ echo 'robot pipeline'
 
 node {
 
+   currentBuild.result = "SUCCESS"
+
+try {
+
    stage('Clone Project From GITHUB') {
    checkout scm
    }
@@ -14,5 +18,12 @@ node {
    stage('Execute tests with mount') {
     sh "sudo docker run -p 4444:4444 --rm -v \$(pwd)/tests:/tmp/tests -v \$(pwd)/output:/output robotdocker:latest"\
    }
+
+}
+
+catch (err) {
+        currentBuild.result = "FAILURE"
+        throw err
+        }
 
 }
