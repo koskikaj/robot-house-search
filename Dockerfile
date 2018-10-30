@@ -1,4 +1,4 @@
-FROM        selenium/standalone-firefox
+FROM        selenium/standalone-firefox:3.12
 
 USER        root
 # Add user for running tests
