@@ -2,7 +2,8 @@
 
 #localhost:4444 -> "ready": true
 url="${1}/wd/hub/status"
-output_match='"ready":\ true'
+output_match='"ready":true'
+#output_match='"ready":\ true'
 
 shift
 cmd="$@"
