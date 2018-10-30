@@ -2,10 +2,6 @@ echo 'robot pipeline'
 
 node {
 
-//   currentBuild.result = "SUCCESS"
-
-//try {
-
 catchError {
 
    stage('Clone Project From GITHUB') {
@@ -22,14 +18,7 @@ catchError {
    }
 
    currentBuild.result = "SUCCESS"
-
-//}
-
-/*catch (err) {
-   currentBuild.result = "FAILURE"
-   throw err
-   }*/
-
+}
    currentBuild.result = "FAILURE"
 
 }
