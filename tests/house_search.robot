@@ -34,6 +34,5 @@ Test_1
     Select Number Of Rooms    ${selectNumberOfRooms}    ${subSelectionOfRooms}
     Fill Flat Size    ${minimumFlatSize}    ${maximumFlatSize}
     Click Search Button    ${searchFlatsButton}
-    sleep  10s
     Sort Search Results From Cheapest To Most Expensive
     Collect Attributes From Cheapest Apartment
