@@ -3,8 +3,8 @@ Library    Selenium2Library    run_on_failure=Nothing
 Library    XvfbRobot
 
 *** Variables ***
-${browser}    ff
-${homepage}    https://www.etuovi.com/
+${browser}    chrome
+${homepage}    https://old.etuovi.com/
 ${city}    Tampere
 ${minimumPrice}    100
 ${maximumPrice}    150

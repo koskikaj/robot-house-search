@@ -26,7 +26,7 @@ Setup
 
 *** Test Cases ***
 
-Test 1
+Test_1
     Login To Test Page    ${browser}    ${homepage}
     Fill Default Text To Search Bar    ${city}
     Select Type Of Flat    ${selectTypeOfFlat}    ${subSelectionOfFlat}
@@ -34,5 +34,6 @@ Test 1
     Select Number Of Rooms    ${selectNumberOfRooms}    ${subSelectionOfRooms}
     Fill Flat Size    ${minimumFlatSize}    ${maximumFlatSize}
     Click Search Button    ${searchFlatsButton}
+    sleep  10s
     Sort Search Results From Cheapest To Most Expensive
     Collect Attributes From Cheapest Apartment
