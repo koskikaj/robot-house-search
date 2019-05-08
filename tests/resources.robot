@@ -59,6 +59,7 @@ Click Search Button
     [Arguments]    ${searchFlatsButton}
     [Documentation]    Click any search button
     Click Element    ${searchFlatsButton}
+    sleep  10s
 
 Sort Search Results From Cheapest To Most Expensive
     [Documentation]    Sorts flats
